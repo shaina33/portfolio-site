@@ -6,8 +6,13 @@ body {
     --title-font: 'Kurale', serif;
     --name-font: 'Poiret One', cursive;
 }
-section .wrapper {
+nav .wrapper {
     max-width: 1200px;
+    margin: auto;
+    width: 95%;
+}
+section .wrapper {
+    max-width: 1000px;
     margin: auto;
     width: 95%;
     border-bottom: 2px solid var(--light-blue);
@@ -18,7 +23,7 @@ section li {
     color: var(--teal);
 }
 h3 {
-    padding-left: 3vw;
+    padding-left: 5px;
     margin-top: 0;
     margin-bottom: 0;
     font-family: var(--title-font);
@@ -44,6 +49,9 @@ nav {
     font-size: 1.3rem;
     
 }
+.nav a.nav-active {
+    color: var(--teal);
+}
 .nav a:hover {
     color: var(--teal);
 }
@@ -51,11 +59,11 @@ nav {
     display: block;
     position: relative;
     visibility: hidden;
-    top: -7vh;
+    top: -5em;
 }
 @media (max-width: 35.5em) {
     .anchor {
-        top: -30vh;
+        top: -9em;
     }
 }
 
@@ -65,16 +73,11 @@ nav {
     background: linear-gradient(130deg, var(--light-blue), var(--dark-blue));
     background: -webkit-linear-gradient(130deg, var(--light-blue), var(--dark-blue));
 }
-@media (max-height: 48em) {
+
+@media (max-width: 35.5em) {
     .hero {
-        padding-top: 30vh;
-        padding-bottom: 15vh;
-    }
-}
-@media (max-height: 30em) {
-    .hero {
-        padding-top: 50vh;
-        padding-bottom: 30vh;
+        padding-top: 9em;
+        padding-bottom: 3em;
     }
 }
 .hero .wrapper {
@@ -85,15 +88,24 @@ nav {
     justify-content: center;
     color: whitesmoke;
 }
-#titles {
-    font-family: var(--title-font);
+@media (max-width: 35.5em) {
+    .hero .wrapper {
+        height: calc(100vh - 12em);
+    }
 }
-h1 {
-    font-size: calc(3rem + 6vh);
+#titles {
     font-family: var(--name-font);
 }
+h1 {
+    font-size: calc(2rem + 8vh);
+    font-family: var(--title-font);
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
 h2 {
-    font-size: calc(2rem + 2vh);
+    font-size: calc(1rem + 4vh);
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* About Me */
@@ -107,15 +119,34 @@ p {
     max-height: 12rem;
     max-width: 12rem;
 }
+.about-me h3 {
+    padding-left: 3vw;
+}
 /* Skills */
 .skills ul {
     list-style-type: none;
     font-size: 1.1rem;
     line-height: 1.7rem;
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 .skills li span {
     margin-right: 4px;
 }
+.button-resume {
+    padding: 10px;
+    border: 3px solid var(--dark-blue);
+    background-color: white;
+    color: var(--dark-blue);
+    margin-left: 20px; 
+}
+.button-resume:hover {
+    background-color: var(--teal);
+    border-color: var(--teal);
+    color: white;
+}
+
 .logos {
     display: flex;
     justify-content: space-around;
