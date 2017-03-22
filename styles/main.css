@@ -29,6 +29,7 @@ h3 {
     font-family: var(--title-font);
     color: var(--dark-blue);
     font-size: 2rem;
+    line-height: 25px;
 }
 p {
     color: var(--teal);
@@ -66,7 +67,7 @@ nav {
     
 }
 .nav a.nav-active {
-    color: var(--teal);
+    text-decoration: underline;
 }   
 .anchor {
     display: block;
@@ -197,7 +198,7 @@ li span {
 }
 .mockup {
     box-sizing: border-box;
-    padding-right: 15px;
+    padding-right: 25px;
 }
 .mockup img {
     margin: auto;
