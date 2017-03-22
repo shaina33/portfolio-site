@@ -103,15 +103,9 @@ nav {
 .hero .wrapper {
     height: 100vh;
     text-align: center;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
     color: whitesmoke;
 }
 @media (max-width: 35.5em) {
@@ -189,15 +183,9 @@ li span {
 }
 
 .logos {
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .logos img {
     height: calc(2em + 2vw);  
