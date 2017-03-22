@@ -111,13 +111,14 @@ nav {
     font-family: var(--name-font);
 }
 h1 {
-    font-size: calc(2rem + 8vh);
+    font-size: calc(3rem + 4vw);
     font-family: var(--title-font);
     margin-top: 0;
     margin-bottom: 0.5em;
+    line-height: calc(3rem + 4vw);
 }
 h2 {
-    font-size: calc(1rem + 4vh);
+    font-size: calc(1.5em + 2vw);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -125,9 +126,8 @@ h2 {
 /* About Me */
 
 #headshot {
-/*    border-radius: 10px;*/
-/*    max-height: 12rem;*/
     max-width: 12rem;
+    margin-bottom: 20px;
 }
 .about-me h3 {
     padding-left: 3vw;
@@ -199,15 +199,18 @@ li span {
 .mockup {
     box-sizing: border-box;
     padding-right: 25px;
+    margin-bottom: 20px;
 }
 .mockup img {
     margin: auto;
 }
-
 
 /* Resources */
 
 .coming-soon {
     margin-top: 130px;
     margin-left: 20px;
+}
+section .wrapper.endless {
+    border: none;
 }
