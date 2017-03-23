@@ -65,13 +65,15 @@ nav {
     right: 0;
     z-index: 1;
 }
+.nav ul {
+    padding-left: 0;
+}
 .nav a {
     color: whitesmoke;
     text-decoration: none;
     vertical-align: middle;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 1.3rem;
-    
 }
 .nav a.nav-active {
     text-decoration: underline;
